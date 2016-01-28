@@ -17,28 +17,28 @@
 		<div class="container">
     		<div class="blurb">
         		<h1>Reverse Linked List!</h1>
-				<p> /* Link list node */
-struct node
-{
-    int data;
-    struct node* next;
-};
- 
-/* Function to reverse the linked list */
-static void reverse(struct node** head_ref)
-{
-    struct node* prev   = NULL;
-    struct node* current = *head_ref;
-    struct node* next;
-    while (current != NULL)
-    {
-        next  = current->next;  
-        current->next = prev;   
-        prev = current;
-        current = next;
-    }
-    *head_ref = prev;
-}
+				<p> /* Link list node */ <br>
+struct node<br>
+{<br>
+    int data;<br>
+    struct node* next;<br>
+};<br>
+ <br>
+/* Function to reverse the linked list */<br>
+static void reverse(struct node** head_ref)<br>
+{<br>
+    struct node* prev   = NULL;<br>
+    struct node* current = *head_ref;<br>
+    struct node* next;<br>
+    while (current != NULL)<br>
+    {<br>
+        next  = current->next;  <br>
+        current->next = prev;   <br>
+        prev = current;<br>
+        current = next;<br>
+    }<br>
+    *head_ref = prev;<br>
+}<br><br>
 				<a href="/about">Read more about my life...</a></p>
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
